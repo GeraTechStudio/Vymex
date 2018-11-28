@@ -1,0 +1,26 @@
+.vmx_country, .vmx_input_tel{
+	font-family: "URegular", sans-serif;
+    width: 13%;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    padding: 6px 8px 5px 15px;
+    border: 1px solid rgb(2, 159, 227);
+    border-right: 0px;
+    color: #555455;
+    font-weight: 500;
+    outline: none;
+    border-radius: 4px 0px 0px 4px;
+}
+.vmx_country{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer
+}
+.vmx_input_tel{
+	width: 80%;
+	border-left: 0;
+	padding-left: 0px;
+	border-radius: 0px;
+}

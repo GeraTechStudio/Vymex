@@ -1,0 +1,104 @@
+body{
+	font-family: "URegular", sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	overflow: hidden;
+}
+	.admin_sidebar{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 320px;
+		max-height: 100vh;
+		height: 100vh;
+		background-color: #2a456e;
+		min-width: 250px;
+	    max-width: 250px;
+		width: 10%;
+		padding-top: 20px; 
+		box-sizing: border-box;
+	}
+		.admin_sidebar .header_pannel{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;	
+		}
+			.admin_sidebar .header_pannel .title_pannel{
+				margin: 0px 0px 20px;
+				font-size: 1.5em;
+				color: #fff;
+			}
+			.admin_sidebar .header_pannel .admin_avatar{
+				margin: 0;
+			}
+				.admin_sidebar .header_pannel .admin_avatar i{
+					font-size: 7em;
+					color: rgba(240, 240, 240, 0.8);
+				}
+			.admin_sidebar .header_pannel .admin_name{
+				margin: 20px 0px;
+				font-family: "ULight", sans-serif;
+				font-size: 1.2em;
+    			letter-spacing: 0.5px;
+				color: #fff;
+			}
+		.admin_sidebar .navigation_pannel{
+			margin: 10% 0;
+			box-sizing: border-box;
+    		width: 100%;
+			display: flex;
+			flex: auto;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		} 
+			.admin_sidebar .navigation_pannel .main_link,
+			.admin_sidebar .navigation_pannel .helper_link{
+				display: flex;
+				flex-direction: inherit;
+				align-items: center;
+				justify-content: flex-start;
+				box-sizing: border-box;
+				width: 100%;
+				box-sizing: border-box;
+			}
+				.admin_sidebar .navigation_pannel .main_link a,
+				.admin_sidebar .navigation_pannel .helper_link a{
+				    display: flex;
+				    flex-direction: row;
+				    justify-content: flex-start;
+				    align-items: center;
+				    text-align: center;
+				    text-decoration: none;
+				    text-transform: uppercase;
+				    font-size: 1.1em;
+				    width: 100%;
+				    padding: 8px 0;
+				    padding-left: 55px;
+				    transition: .25s all ease;
+				    box-sizing: border-box;
+				}
+
+				.admin_sidebar .navigation_pannel .active i{
+					color: #f47032;
+				}
+					.admin_sidebar .navigation_pannel .main_link a i,
+					.admin_sidebar .navigation_pannel .helper_link a i{
+						font-size: 1.3em;
+					    margin-right: 20px;
+					    box-sizing: border-box;
+					}
+						.admin_sidebar .navigation_pannel .main_link a:hover i,
+						.admin_sidebar .navigation_pannel .helper_link a:hover i{
+							color: #f47032;
+							transition: .25s all ease;
+						}
+
+
+		.navigation_pannel a{
+			color: #fff;
+		}

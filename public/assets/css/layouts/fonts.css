@@ -1,0 +1,39 @@
+@font-face
+{
+	font-family: ULight;
+	font-style: normal;
+	font-weight: 300;
+	src: url(../../fonts/Ubuntu/Ubuntu-Light.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: ULightItalic;
+	font-style: normal;
+	font-weight: 300;
+	src: url(../../fonts/Ubuntu/Ubuntu-LightItalic.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: URegular;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: UMedium;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../../fonts/Ubuntu/Ubuntu-Medium.ttf) format("truetype");
+}
+
+@font-face
+{
+	font-family: UBold;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../../fonts/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
+}

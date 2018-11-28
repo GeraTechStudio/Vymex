@@ -1,0 +1,170 @@
+/*Notifications*/
+    .modal_nowrap{
+        position: fixed;
+        z-index: 999999;
+        top: 14vh;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .fast_notification{
+        	position: relative;
+            opacity: 0;
+            display: inline-block;
+            cursor: default;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 1.5em;
+            box-shadow: 3px 3px 10px #686868;
+            transition: .75s opacity ease;
+            -webkit-touch-callout: none; 
+            -webkit-user-select: none; 
+            -khtml-user-select: none; 
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none;
+            cursor: pointer; 
+        }
+
+        .opacity{
+            opacity: 1;
+        }
+   
+/*Btns*/
+
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+        .btn-group .btn-vymex{
+            font-size: .7em;
+            border: 0px;
+            background-color: #979595;
+            padding: 5px 6px;
+            color: #ffffff;
+            cursor: pointer;
+            outline: none;
+        }
+            .btn-group .btn-vymex:hover{
+                background-color: #717171;
+            }
+            .btn-group .btn-vymex.active{
+                background-color: #717171;
+            }
+
+        .btn-group .btn-vymex:first-child{
+            border: 4px 0px 0px 4px;
+            -webkit-border-radius: 4px 0px 0px 4px;
+            -moz-border-radius: 4px 0px 0px 4px;
+        }
+
+        .btn-group .btn-vymex:last-child{
+            border: 0px 4px 4px 0px;
+            -webkit-border-radius: 0px 4px 4px 0px;
+            -moz-border-radius: 0px 4px 4px 0px;
+        }
+
+/*Alerts*/
+    .alert-wrap{
+        position: fixed;
+        z-index: 999999;
+        bottom: 0vh;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .alert-msg{
+            background-color: rgba(188, 219, 247, .5);
+            padding: 20px 40px 10px;
+            box-shadow: 1px 1px 5px rgba(79, 86, 105, 0.6);
+            border-radius: 2px;
+            overflow: hidden;
+            font-size: 1.3em;
+            font-family: "ULight";
+            position: relative;
+            display: inline-block;
+            transition: .75s opacity ease;
+            -webkit-touch-callout: none; 
+            -webkit-user-select: none; 
+            -khtml-user-select: none; 
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none;
+        }
+            .alert-msg h3{
+                margin: 0px 0px 15px;
+                font-size: 0.8em;
+                color: #1f2c42;
+            }
+            .alert-msg .button-row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .alert-msg .button-row button{
+                    border: none;
+                    font-family: "URegular", sans-serif;
+                    font-weight: 900;
+                    letter-spacing: 1px;
+                    color: rgba(31, 45, 67, 0.9);
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: #fff;
+                    box-shadow: 1px 1px 5px rgba(79, 86, 105, 0.6);
+                    box-sizing: border-box;
+                    transition: .25s all ease;
+                    width: 140px;
+                    border-radius: 4px;
+                    font-size: 0.7em;
+                    text-transform: uppercase;
+                    height: 35px;
+                    color: #fff;
+                    outline: none;
+                }
+                    .alert-msg .button-row button#CImgManager,
+                    .alert-msg .button-row button#CTextManager,
+                    .alert-msg .button-row button.deleteBlock[value=accept],
+                    .alert-msg .button-row button.closeCategory,
+                    .alert-msg .button-row button.deleteCategory{
+                        background-color: #db1d1d;
+                    }
+                        .alert-msg .button-row button#CImgManager:hover,
+                        .alert-msg .button-row button#CTextManager:hover,
+                        .alert-msg .button-row button.deleteBlock[value=accept]:hover,
+                        .alert-msg .button-row button.closeCategory:hover,
+                        .alert-msg .button-row button.deleteCategory:hover{
+                            background-color: rgba(188, 25, 25, 1);
+                        }
+                    .alert-msg .button-row button#ConImgManager,
+                    .alert-msg .button-row button#ConTextManager{
+                        background-color: #f47032;
+                    }
+                        .alert-msg .button-row button#ConImgManager:hover,
+                        .alert-msg .button-row button#ConTextManager:hover{
+                            background-color: #dc632b;
+                        }
+                    .alert-msg .button-row button#STextManager,
+                    .alert-msg .button-row button.deleteBlock[value=cancel],
+                    .alert-msg .button-row button.continueCategory,
+                    .alert-msg .button-row button.cancelCategory{
+                        background-color: #059205;
+                    }   
+                        .alert-msg .button-row button#STextManager:hover,
+                        .alert-msg .button-row button.deleteBlock[value=cancel]:hover,
+                        .alert-msg .button-row button.continueCategory:hover,
+                        .alert-msg .button-row button.cancelCategory:hover{
+                            background-color: #047704;
+                        }
+
+
+

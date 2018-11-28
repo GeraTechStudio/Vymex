@@ -1,0 +1,184 @@
+.calendar{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between!important;
+	align-items: center;
+	box-sizing: border-box;
+}
+	.calendar .cal{
+		font-family: "URegular", sans-serif;
+	    height: 30px;
+	    box-sizing: border-box;
+	    font-size: 1em;
+	    padding: 6px 8px;
+	    border: 1px solid rgb(2, 159, 227);
+	    color: #555455;
+	    font-weight: 500;
+	    outline: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    position: relative;
+	}
+	.calendar-day{
+		width: 20%;
+	}
+	.calendar-month{
+		width: 45%;
+	}
+	#cal_year{
+		width: 30%;
+	    text-align: center;
+	}
+
+/*Modal Window*/
+	#cmodal
+	{
+		display: none;
+		justify-content: center;
+		align-items: center;
+	    width: 100vw;
+	    min-width: 360px;
+	    height: 100vh;
+	    min-height: 480px;
+	    position: fixed;
+	    background-color: rgba(29, 29, 29, 0.8);
+	    top: 0;
+	    left: 0;
+	    z-index: 99999;
+	}
+	#cmodal.active{
+		display: flex;
+	}
+		#cmodal .modal-wrap{
+		    width: 315px;
+		    min-width: 280px;
+		    height: 260px;
+		    min-height: 200px;
+		    background: #f9f9f9;
+		    border-radius: 6px;
+		    box-sizing: border-box;
+		    padding: 15px 25px;
+		    border: 1.5px solid #49494b;
+		}
+			#cmodal .modal-wrap .modal-header{
+				display: flex;
+			    justify-content: space-between;
+			    align-items: flex-end;
+			    color: #636363;
+			    position: relative;
+			}
+				#cmodal .modal-wrap .modal-header .title{
+					margin: 0px;
+					font-size: 1.4em;
+				}
+				#cmodal .modal-wrap .modal-header button{
+					font-size: 1em;
+				    text-decoration: none;
+				    letter-spacing: -1px;
+				    color: #636363;
+				    position: absolute;
+				    right: 0px;
+    				top: 0px;
+				    padding: 5px 8px;
+				    border: 1px solid #f9f9f9;
+				    border-radius: 4px;
+				    box-sizing: border-box;
+				    transition: .15s all ease;
+				    background-color: transparent;
+				    cursor: pointer;
+				    outline: none;
+				}
+					#cmodal .modal-wrap .modal-header button:hover {
+					    border-color: #f47032;
+					    background-color: rgba(244, 112, 50, .15);
+					}
+				#cmodal .modal-wrap .modal-body{
+					margin-top: 15px;
+				}
+					/*Day*/
+					#cmodal .modal-wrap .modal-body .array-day{
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+						flex-wrap: wrap;
+						width: 100%;
+					}
+						#cmodal .modal-wrap .modal-body .array-day span{
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
+						    box-sizing: border-box;
+						    width: 31px;
+						    height: 31px;
+						    background-color: #fff;
+						    border: .5px solid #989894;
+						    color: #989894;
+						    margin: 3px;
+						    cursor: pointer;
+						    transition: .2s all ease;
+						}
+							#cmodal .modal-wrap .modal-body .array-day span:hover,
+							#cmodal .modal-wrap .modal-body .array-day span.active{
+							    background: #3eb5f1;
+    							color: #fff;
+    						}
+    					#cmodal .modal-wrap .modal-body .delete_cal{
+    						width: auto;
+						    padding: 0px 6px;
+						    font-size: .9em;
+						    color: #fff;
+						    background-color: #d9534f;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
+						    box-sizing: border-box;
+						    height: 31px;
+						    border: .5px solid #d43f3a;
+						    margin: 3px;
+						    cursor: pointer;
+						    transition: .2s all ease;
+						}
+							#cmodal .modal-wrap .modal-body .delete_cal:hover{
+								color: #fff;
+							    background-color: #c9302c;
+							    border-color: #ac2925;
+							}
+    				/*Month*/
+    				#cmodal .modal-wrap .modal-body .array-month{
+    					height: 70%;
+					    display: flex;
+					    flex-direction: column;
+					    justify-content: center;
+					    align-items: center;
+					    position: relative;
+    				}
+    					#cmodal .modal-wrap .modal-body .array-month .choose-month{
+    						font-family: "UBold", sans-serif;
+    						font-size: 1.5em;
+							color: #f47032;
+							cursor: pointer;
+							margin: 8px 0px 11px;
+							border-bottom: 1.5px solid #f9f9f9;
+							transition: .2s all ease;
+						    padding-bottom: 5px;
+    					}
+    						#cmodal .modal-wrap .modal-body .array-month .choose-month:hover{
+	    						border-bottom: 1.5px solid #3eb5f1;
+	    					}
+    					
+
+
+    				/*Togglers*/
+						#cmodal .modal-wrap .modal-body .calendar-toggler{
+							color: #3eb5f1;
+    						font-size: 2em;
+    						cursor: pointer;
+    						transition: .2s all ease;
+						}
+							#cmodal .modal-wrap .modal-body .calendar-toggler:hover{
+								color: #389bcd;	
+							}

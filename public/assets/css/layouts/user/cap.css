@@ -1,0 +1,82 @@
+body{
+	background: #FAF9FF;
+	position: relative;
+}
+.user_content-box{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		min-width: 240px;
+		flex: auto;
+		margin: 0px 50px 0px 80px;
+		height: 100vh; 
+	}
+		/*Header*/
+		.user_header{
+			margin-top: 30px;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+		}	
+			.btn-audit{
+				font-size: 1.2em;
+			    display: inline-block;
+			    color: #fff;
+			    text-decoration: none;
+			    background-color: #3eb5f1;
+			    text-align: left;
+			    width: 220px;
+			    padding: 7px 20px;
+			    height: 36px;
+			    box-sizing: border-box;
+			}
+			.group_navigation{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 310px;
+				transition: .5s ease all;
+			}
+
+				.btn-add-user{
+					font-size: 0.9em;
+				    letter-spacing: -0.5px;
+					width: 200px;
+	    			padding: 7px 5px;
+					font-family: "UBold";
+					border: 1.5px solid #3eb5f1;
+					color: rgba(73, 73, 73, 0.7);
+    				background-color: #faf9ff;
+					text-decoration: none;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					height: 36px;
+			    	box-sizing: border-box;
+			    	transition: .5s ease all;
+				}
+				.btn-tutorial i{
+					color: #6f6f6f;
+					font-size: 1.5em;
+			    	box-sizing: border-box;
+				}
+
+				/*Profile btn*/
+				.btn-profile{
+					cursor: pointer;
+					color: #3eb5f1;
+					opacity: .4;
+					transition: .2s all ease;
+				}
+					.btn-profile:hover{
+						color: #f47032;
+					}
+
+
+					.btn-profile i{
+						font-size: 2.2em;
+						height: 36px;
+				    	box-sizing: border-box;
+					}
