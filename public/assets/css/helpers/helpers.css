@@ -135,14 +135,16 @@
                     .alert-msg .button-row button#CTextManager,
                     .alert-msg .button-row button.deleteBlock[value=accept],
                     .alert-msg .button-row button.closeCategory,
-                    .alert-msg .button-row button.deleteCategory{
+                    .alert-msg .button-row button.deleteCategory,
+                    .alert-msg .button-row button.deleteAnswerAudit{
                         background-color: #db1d1d;
                     }
                         .alert-msg .button-row button#CImgManager:hover,
                         .alert-msg .button-row button#CTextManager:hover,
                         .alert-msg .button-row button.deleteBlock[value=accept]:hover,
                         .alert-msg .button-row button.closeCategory:hover,
-                        .alert-msg .button-row button.deleteCategory:hover{
+                        .alert-msg .button-row button.deleteCategory:hover,
+                        .alert-msg .button-row button.deleteAnswerAudit:hover{
                             background-color: rgba(188, 25, 25, 1);
                         }
                     .alert-msg .button-row button#ConImgManager,
@@ -156,13 +158,15 @@
                     .alert-msg .button-row button#STextManager,
                     .alert-msg .button-row button.deleteBlock[value=cancel],
                     .alert-msg .button-row button.continueCategory,
-                    .alert-msg .button-row button.cancelCategory{
+                    .alert-msg .button-row button.cancelCategory,
+                    .alert-msg .button-row button.cancelAnswerAudit{
                         background-color: #059205;
                     }   
                         .alert-msg .button-row button#STextManager:hover,
                         .alert-msg .button-row button.deleteBlock[value=cancel]:hover,
                         .alert-msg .button-row button.continueCategory:hover,
-                        .alert-msg .button-row button.cancelCategory:hover{
+                        .alert-msg .button-row button.cancelCategory:hover,
+                        .alert-msg .button-row button.cancelAnswerAudit:hover{
                             background-color: #047704;
                         }
 

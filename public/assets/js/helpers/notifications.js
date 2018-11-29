@@ -154,6 +154,20 @@ function modalStatus (status) {
 	    			color: '#fff',
 				}
 				break;
+			case 'a21':
+				message = "Заполните все поля ответов";
+				styles = {
+					background: 'rgb(244, 112, 50)',
+	    			color: '#fff',
+				}
+				break;
+			case 'a22':
+				message = "Заполните все поля";
+				styles = {
+					background: 'rgb(244, 112, 50)',
+	    			color: '#fff',
+				}
+				break;
 		/*Custom Success Code*/
 			case 'v700':
 				message = "Авторизация пройдена успешно";

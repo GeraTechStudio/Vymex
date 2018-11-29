@@ -76,3 +76,12 @@ $('body').on('click', '#category' ,function(){
 		$('.alert-msg').remove();
 	}
 });
+
+
+
+
+function DeleteAuditAnswer(id){
+	$('.alert-msg').remove();
+	var deleteItemHTML = "<div class='alert-msg creator'><h3 style='font-size:.9em;'>Уверены, что хотите удалить ответ?</h3><div class='button-row'><button class='deleteAnswerAudit' value='" + id + "'>Удалить</button><button class='cancelAnswerAudit' value='" + id + "'>Отменить</button></div></div>";
+	$('.alert-wrap').append(deleteItemHTML);
+}

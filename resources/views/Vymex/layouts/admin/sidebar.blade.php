@@ -9,11 +9,12 @@
 	<nav class="navigation_pannel">
 		<div class="main_link">
 			<a href="{{route('dashboard')}}"><i class="fas fa-columns"></i>Кабинет</a>
+			<a href="{{route('audit')}}"><i class="fas fa-tasks"></i></i>Аудит</a>
 			<a href="{{route('tile-blog')}}"><i class="fas fa-th"></i>Блог</a>
 		</div>
 		<div class="helper_link">
-			<a href=""><i class="far fa-comments"></i>Личные консультации</a>
-			<a href=""><i class="fas fa-wrench"></i>Тех поддержка</a>
+			<!-- <a href=""><i class="far fa-comments"></i>Личные консультации</a>
+			<a href=""><i class="fas fa-wrench"></i>Тех поддержка</a> -->
 		</div>
 	</nav>
 </aside>

@@ -53,6 +53,10 @@ Route::get('/blog/{slug}', "FrontEnd\FrontEndController@getBlogArticle")->name('
 		/*Subscribers*/
 		Route::get('/dashboard/users', "Admin\UsersController@getUsers")->name('users');
 		Route::get('/dashboard/user/{id?}', "Admin\UsersController@getUserInfo")->where(['id' => '[0-9]+'])->name('userInfo');
+		/*Audit*/
+		Route::get('/audit/', "Admin\AuditController@getAuditList")->name('audit');
+		Route::post('/audit/create-ask', "Admin\AuditController@createAskAudit");
+		
 		/*Blog*/
 		Route::get('/blog', "Admin\BlogController@getTileBlog")->name('tile-blog');
 		Route::get('/blog/create', "Admin\BlogController@СreateBlog")->name('create-blog');

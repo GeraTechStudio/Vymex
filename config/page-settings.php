@@ -41,6 +41,8 @@
            /*Users*/
            'AUserCSS' => 'assets/css/pages/admin/users/main.css',
            'AUserCardCSS' => 'assets/css/pages/admin/users/user-card/main.css',
+           /*Audit*/
+           'AAuditCSS' => 'assets/css/pages/admin/audit/main.css',
            /*Blog*/
            'ABlogCSS' => 'assets/css/pages/admin/blog/main.css',
            'ABlogCreateCSS' => 'assets/css/pages/admin/blog/create-blog/main.css',
@@ -57,6 +59,8 @@
           'AdminStatisticsCanvasJS' => 'assets/js/pages/admin/statisticsCanvas.js',
           /*Users*/
           'AUserJS' => 'assets/js/pages/admin/users/app.js',
+          /*Audit*/
+           'AAuditJS' => 'assets/js/pages/admin/audit/app.js',
           /*Blog*/
           'CreateBlogJS' => 'assets/js/pages/admin/blog/create-blog/app.js',
 
